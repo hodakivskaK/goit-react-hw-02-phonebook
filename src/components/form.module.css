@@ -1,6 +1,13 @@
-form {
+form,
+ul {
   padding: 40px;
-  background-color: rgb(251, 239, 220);
+  background-color: rgb(220, 238, 251);
+  border-radius: 20px;
+  border: thick double #32a1ce;
+}
+
+form label {
+  color: black;
 }
 
 label {
@@ -10,6 +17,10 @@ label {
 
 input {
   display: block;
+  width: 300px;
+  height: 20px;
+  padding: 5px;
+  border-radius: 10px;
   margin: 5px;
 }
 

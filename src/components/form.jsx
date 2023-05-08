@@ -18,7 +18,8 @@ export class Form extends Component {
 
   handleChange = (e) => {
     const { name, value } = e.currentTarget;
-
+    
+    
     this.setState({
       [name]: value,
     })
@@ -26,7 +27,9 @@ export class Form extends Component {
       
       handleSubmit = (e) => {
         e.preventDefault()
+        e.currentTarget.reset()
         this.props.onSubmit(this.state)
+        
         this.reset()
   }
 
@@ -35,6 +38,8 @@ export class Form extends Component {
   name: '',
   number: '',
     })
+
+
   }
 
     render() {
